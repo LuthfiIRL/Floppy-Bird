@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 578704708}
   - component: {fileID: 578704707}
   - component: {fileID: 578704706}
+  - component: {fileID: 578704711}
   m_Layer: 0
   m_Name: Floppy Bird
   m_TagString: Untagged
@@ -560,6 +561,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578704711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578704705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfd8e86d8f5e04479523c4ebbf7667c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
