@@ -6,8 +6,8 @@ public class Score : MonoBehaviour
 {
     public static Score Instance;
 
-    [SerializeField] private TextMeshPro currentScoreText;
-    [SerializeField] private TextMeshPro highScoreText;
+    [SerializeField] private TextMeshProUGUI currentScoreText;
+    [SerializeField] private TextMeshProUGUI highScoreText;
     private int scoreText;
 
     private void Awake()
@@ -28,8 +28,15 @@ public class Score : MonoBehaviour
     {
         if (scoreText > PlayerPrefs.GetInt("HighScore"))
         {
-            PlayerPrefs.SetInt("HighSco", scoreText);
+            PlayerPrefs.SetInt("HighScore", scoreText);
             highScoreText.text = scoreText.ToString();
         }
+    }
+
+    public void UpdateScore()
+    {
+        scoreText++;
+        currentScoreText.text = scoreText.ToString();
+        UpdateHighScore();
     }
 }
